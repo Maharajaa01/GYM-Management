@@ -1,9 +1,11 @@
 # Copyright (c) 2025, Maha Raja and contributors
 # For license information, please see license.txt
 
-# import frappe
+import frappe
 from frappe.model.document import Document
 
 
 class WalkInInquiry(Document):
-	pass
+	def validate(self):
+		if self.status == "Converted" and not self.email:
+			frappe.throw("Email is required for conversion.")

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:branch_code",
  "creation": "2025-07-22 09:21:34.222454",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -15,12 +16,17 @@
   {
    "fieldname": "branch_name",
    "fieldtype": "Data",
-   "label": "Branch Name"
+   "in_list_view": 1,
+   "label": "Branch Name",
+   "reqd": 1
   },
   {
    "fieldname": "branch_code",
    "fieldtype": "Data",
-   "label": "Branch Code"
+   "in_list_view": 1,
+   "label": "Branch Code",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "address",
@@ -40,10 +46,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 09:23:03.548993",
+ "modified": "2025-07-23 09:45:56.766332",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Branch",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

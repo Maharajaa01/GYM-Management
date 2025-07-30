@@ -6,27 +6,38 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "profile_photo",
-  "attach_image",
   "membership_id",
   "full_name",
+  "contact_number",
+  "martial_status",
   "emergency_contact",
-  "join_date",
+  "attach_image",
+  "package_end",
+  "package_start_date",
+  "current_plan",
+  "days_left",
   "column_break_ntci",
   "branch",
+  "occupation",
   "gender",
+  "join_date",
+  "blood_group",
   "membership_status",
-  "contact_number",
   "email",
   "dob",
-  "address"
+  "address",
+  "health_details_section",
+  "any_joint_problem",
+  "any_health_problem",
+  "height",
+  "weight",
+  "bmi"
  ],
  "fields": [
   {
    "fieldname": "membership_id",
    "fieldtype": "Data",
-   "label": "Membership ID",
-   "read_only": 1
+   "label": "Membership ID"
   },
   {
    "fieldname": "full_name",
@@ -50,7 +61,8 @@
   {
    "fieldname": "contact_number",
    "fieldtype": "Phone",
-   "label": "Contact Number"
+   "label": "Contact Number",
+   "reqd": 1
   },
   {
    "fieldname": "email",
@@ -71,16 +83,13 @@
   {
    "fieldname": "join_date",
    "fieldtype": "Date",
-   "label": "Join Date"
-  },
-  {
-   "fieldname": "profile_photo",
-   "fieldtype": "Image",
-   "label": "Profile Photo"
+   "label": "Join Date",
+   "reqd": 1
   },
   {
    "fieldname": "attach_image",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Attach Image"
   },
   {
@@ -93,16 +102,87 @@
    "fieldname": "branch",
    "fieldtype": "Link",
    "label": "Branch",
-   "options": "Branch"
+   "options": "Branch",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_ntci",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "martial_status",
+   "fieldtype": "Select",
+   "label": "Martial Status",
+   "options": "\nSingle\nMarried"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "\nA+\nA\u2212\nB+\nB\u2212\nAB+\nAB\u2212\nO+\nO\u2212"
+  },
+  {
+   "fieldname": "health_details_section",
+   "fieldtype": "Section Break",
+   "label": "Health Details"
+  },
+  {
+   "fieldname": "any_joint_problem",
+   "fieldtype": "Select",
+   "label": "Any Joint Problem",
+   "options": "\nNone\nKnee Pain\nBack Pain\nShoulder Pain\nArthritis\nSciatica\nOther"
+  },
+  {
+   "fieldname": "any_health_problem",
+   "fieldtype": "Select",
+   "label": "Any Health Problem",
+   "options": "None\nDiabetes\nHypertension\nAsthma\nHeart Condition\nThyroid Issues\nOther"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "bmi",
+   "fieldtype": "HTML",
+   "label": "BMI"
+  },
+  {
+   "fieldname": "package_end",
+   "fieldtype": "Date",
+   "label": "Package_end"
+  },
+  {
+   "fieldname": "package_start_date",
+   "fieldtype": "Date",
+   "label": "Package Start Date"
+  },
+  {
+   "fieldname": "current_plan",
+   "fieldtype": "Data",
+   "label": "Current Plan"
+  },
+  {
+   "fieldname": "days_left",
+   "fieldtype": "Int",
+   "label": "Days left"
   }
  ],
+ "image_field": "attach_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 09:27:44.078605",
+ "modified": "2025-07-28 23:37:59.443480",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Member",

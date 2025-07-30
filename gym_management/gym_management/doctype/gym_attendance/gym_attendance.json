@@ -10,7 +10,8 @@
   "check_in_time",
   "check_out_time",
   "duration",
-  "branch"
+  "branch",
+  "check_in_logs"
  ],
  "fields": [
   {
@@ -44,11 +45,17 @@
    "fieldtype": "Link",
    "label": "Branch",
    "options": "Branch"
+  },
+  {
+   "fieldname": "check_in_logs",
+   "fieldtype": "Table",
+   "label": "Check In Log",
+   "options": "Check In Log"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 09:33:52.511503",
+ "modified": "2025-07-24 23:42:06.403387",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Attendance",

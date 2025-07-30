@@ -6,3 +6,12 @@
 
 // 	},
 // });
+frappe.ui.form.on('Gym Member', {
+    refresh: function(frm) {
+
+    },
+
+    attach_image: function(frm) {
+        frm.trigger("refresh");
+    }
+});
