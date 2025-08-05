@@ -8,10 +8,11 @@
   "member",
   "plan",
   "start_date",
-  "end_date",
+  "branch",
+  "column_break_lgys",
   "status",
   "fee_paid",
-  "branch"
+  "end_date"
  ],
  "fields": [
   {
@@ -23,7 +24,7 @@
    "fieldname": "plan",
    "fieldtype": "Link",
    "label": "Plan",
-   "options": "Member Subscription"
+   "options": "Membership Plan"
   },
   {
    "fieldname": "start_date",
@@ -51,11 +52,15 @@
    "fieldtype": "Link",
    "label": "Branch",
    "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_lgys",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 09:29:15.132051",
+ "modified": "2025-07-31 23:59:33.266316",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Member Subscription",

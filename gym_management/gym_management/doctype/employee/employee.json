@@ -8,10 +8,12 @@
   "employee_id",
   "full_name",
   "designation",
-  "salary",
+  "email",
+  "column_break_nspy",
+  "is_active",
   "date_of_joining",
   "contact_number",
-  "email"
+  "salary"
  ],
  "fields": [
   {
@@ -49,11 +51,21 @@
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
+  },
+  {
+   "fieldname": "column_break_nspy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 09:20:26.143119",
+ "modified": "2025-08-01 00:35:41.122495",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Employee",

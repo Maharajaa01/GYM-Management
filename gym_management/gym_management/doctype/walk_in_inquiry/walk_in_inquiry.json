@@ -1,30 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{W-I-I}-{visitor_name}",
  "creation": "2025-07-22 09:34:21.876451",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "visitor_name",
   "contact_number",
-  "email",
-  "inquiry_date",
   "source",
-  "status",
   "follow_up_date",
   "assigned_to",
-  "branch"
+  "column_break_gpsx",
+  "status",
+  "inquiry_date",
+  "branch",
+  "email"
  ],
  "fields": [
   {
    "fieldname": "visitor_name",
    "fieldtype": "Data",
-   "label": "Visitor Name"
+   "in_list_view": 1,
+   "label": "Visitor Name",
+   "reqd": 1
   },
   {
    "fieldname": "contact_number",
    "fieldtype": "Data",
-   "label": "Contact Number"
+   "in_list_view": 1,
+   "label": "Contact Number",
+   "reqd": 1
   },
   {
    "fieldname": "email",
@@ -34,7 +40,9 @@
   {
    "fieldname": "inquiry_date",
    "fieldtype": "Date",
-   "label": "Inquiry Date"
+   "in_list_view": 1,
+   "label": "Inquiry Date",
+   "reqd": 1
   },
   {
    "fieldname": "source",
@@ -64,14 +72,19 @@
    "fieldtype": "Link",
    "label": "Branch",
    "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_gpsx",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 09:38:59.131572",
+ "modified": "2025-07-31 23:44:03.152898",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Walk-In Inquiry",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

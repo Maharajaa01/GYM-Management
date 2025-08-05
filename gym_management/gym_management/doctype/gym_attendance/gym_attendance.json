@@ -1,16 +1,19 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:GA-{member_id}-{DD}",
  "creation": "2025-07-20 22:06:40.195281",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "member_id",
-  "date",
   "check_in_time",
-  "check_out_time",
   "duration",
+  "column_break_invo",
+  "date",
+  "check_out_time",
   "branch",
+  "section_break_jhjx",
   "check_in_logs"
  ],
  "fields": [
@@ -51,14 +54,23 @@
    "fieldtype": "Table",
    "label": "Check In Log",
    "options": "Check In Log"
+  },
+  {
+   "fieldname": "column_break_invo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jhjx",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-24 23:42:06.403387",
+ "modified": "2025-07-31 23:04:26.094212",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Attendance",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
